@@ -18,7 +18,7 @@ public class BookController {
         this.bookService = bookService;
     }
 
-    //we want to get something u=out of our server
+    //we want to get something u=out of our server.
     @GetMapping
     public List<Book> getBooks() {
         return bookService.getBooks();
