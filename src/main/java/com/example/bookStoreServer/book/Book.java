@@ -20,12 +20,12 @@ public class Book {
     private Long id;
     private String title;
     private String author;
-    private int year;
-    private double price;
+    private Integer year;
+    private Double price;
 
     public Book() {}
 
-    public Book(Long id, String title, String author, int year, double price) {
+    public Book(Long id, String title, String author, Integer year, Double price) {
         this.id = id;
         this.title = title;
         this.author = author;
@@ -33,7 +33,7 @@ public class Book {
         this.price = price;
     }
 
-    public Book(String title, String author, int year, double price) {
+    public Book(String title, String author, Integer year, Double price) {
         this.title = title;
         this.author = author;
         this.year = year;
@@ -64,19 +64,19 @@ public class Book {
         this.author = author;
     }
 
-    public int getYear() {
+    public Integer getYear() {
         return year;
     }
 
-    public void setYear(int year) {
+    public void setYear(Integer year) {
         this.year = year;
     }
 
-    public double getPrice() {
+    public Double getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(Double price) {
         this.price = price;
     }
 

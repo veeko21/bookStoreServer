@@ -45,7 +45,7 @@ public class BookService {
     }
 
     @Transactional
-    public void updateBook(Long bookId, String title, String author, int year, double price) {
+    public void updateBook(Long bookId, String title, String author, Integer year, Double price) {
         Book book = bookRepository.findById(bookId).orElseThrow(() -> new IllegalStateException(
                 "book with id " + bookId + " does not exist"));
 
